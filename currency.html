@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვალუტის კურსი - Sono Credit</title>
+    <meta name="description" content="ვალუტის კურსი და გაცვლა Sono Credit-ში. დოლარი, ევრო, რუბლი და სხვა ვალუტები.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Sono Credit</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">მთავარი</a>
+                <a href="technika.html" class="nav-link">ტექნიკა</a>
+                <a href="icloud.html" class="nav-link">iCloud</a>
+                <a href="gold.html" class="nav-link">ოქრო</a>
+                <a href="currency.html" class="nav-link active">ვალუტა</a>
+                <a href="contact.html" class="nav-link">კონტაქტი</a>
+                <a href="vakansiebi.html" class="nav-link">ვაკანსიები</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>სონოს ვალუტის კურსი</h1>
+        </div>
+    </div>
+
+    <div class="currency-section">
+        <div class="container">
+            <div class="currency-wrapper">
+                <div class="currency-rates">
+                    <h2>დღევანდელი კურსები</h2>
+                    <div class="rates-list">
+                        <div class="rate-item">
+                            <div class="currency-info">
+                                <span class="currency-flag">1</span>
+                                <span class="currency-name">USD - დოლარი</span>
+                            </div>
+                            <div class="rate-values">
+                                <span class="buy-rate">ყიდვა: 2.65</span>
+                                <span class="sell-rate">გაყიდვა: 2.70</span>
+                            </div>
+                        </div>
+
+                        <div class="rate-item">
+                            <div class="currency-info">
+                                <span class="currency-flag">1</span>
+                                <span class="currency-name">EUR - ევრო</span>
+                            </div>
+                            <div class="rate-values">
+                                <span class="buy-rate">ყიდვა: 2.85</span>
+                                <span class="sell-rate">გაყიდვა: 2.92</span>
+                            </div>
+                        </div>
+
+                        <div class="rate-item">
+                            <div class="currency-info">
+                                <span class="currency-flag">100</span>
+                                <span class="currency-name">RUB - რუბლი</span>
+                            </div>
+                            <div class="rate-values">
+                                <span class="buy-rate">ყიდვა: 0.025</span>
+                                <span class="sell-rate">გაყიდვა: 0.028</span>
+                            </div>
+                        </div>
+
+                        <div class="more-currencies">
+                            <button class="show-more-btn">მეტი ვალუტა</button>
+                            <div class="additional-rates" style="display: none;">
+                                <div class="rate-item">
+                                    <div class="currency-info">
+                                        <span class="currency-flag">1</span>
+                                        <span class="currency-name">GBP - ფუნტი</span>
+                                    </div>
+                                    <div class="rate-values">
+                                        <span class="buy-rate">ყიდვა: 3.35</span>
+                                        <span class="sell-rate">გაყიდვა: 3.45</span>
+                                    </div>
+                                </div>
+
+                                <div class="rate-item">
+                                    <div class="currency-info">
+                                        <span class="currency-flag">1</span>
+                                        <span class="currency-name">TRY - ლირა</span>
+                                    </div>
+                                    <div class="rate-values">
+                                        <span class="buy-rate">ყიდვა: 0.078</span>
+                                        <span class="sell-rate">გაყიდვა: 0.082</span>
+                                    </div>
+                                </div>
+
+                                <div class="rate-item">
+                                    <div class="currency-info">
+                                        <span class="currency-flag">1</span>
+                                        <span class="currency-name">AZN - მანათი</span>
+                                    </div>
+                                    <div class="rate-values">
+                                        <span class="buy-rate">ყიდვა: 1.53</span>
+                                        <span class="sell-rate">გაყიდვა: 1.60</span>
+                                    </div>
+                                </div>
+
+                                <div class="rate-item">
+                                    <div class="currency-info">
+                                        <span class="currency-flag">1000</span>
+                                        <span class="currency-name">AMD - დრამი</span>
+                                    </div>
+                                    <div class="rate-values">
+                                        <span class="buy-rate">ყიდვა: 5.50</span>
+                                        <span class="sell-rate">გაყიდვა: 7.07</span>
+                                    </div>
+                                </div>
+
+                                <div class="rate-item">
+                                    <div class="currency-info">
+                                        <span class="currency-flag">10</span>
+                                        <span class="currency-name">AED - დირჰამი</span>
+                                    </div>
+                                    <div class="rate-values">
+                                        <span class="buy-rate">ყიდვა: 6.16</span>
+                                        <span class="sell-rate">გაყიდვა: 7.36</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="currency-calculator">
+                    <h2>ვალუტის კალკულატორი</h2>
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label>ვალუტა:</label>
+                            <select id="currency-select">
+                                <option value="USD">USD - დოლარი</option>
+                                <option value="EUR">EUR - ევრო</option>
+                                <option value="RUB">RUB - რუბლი</option>
+                                <option value="GBP">GBP - ფუნტი</option>
+                                <option value="TRY">TRY - ლირა</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>რაოდენობა:</label>
+                            <input type="number" id="amount-input" placeholder="0" min="0" step="0.01">
+                        </div>
+
+                        <div class="form-group">
+                            <label>ოპერაცია:</label>
+                            <div class="operation-buttons">
+                                <button class="operation-btn active" data-operation="buy">ყიდვა</button>
+                                <button class="operation-btn" data-operation="sell">გაყიდვა</button>
+                            </div>
+                        </div>
+
+                        <div class="calculation-result">
+                            <div class="result-display">
+                                <span>შედეგი: </span>
+                                <span id="calculation-result">0 ლარი</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/currency.js"></script>
+</body>
+</html>

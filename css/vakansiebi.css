@@ -1,0 +1,85 @@
+.vacancies-section {
+  padding: 100px 20px 60px;
+  background-color: #f8f8f8;
+}
+
+.vacancies-section h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.vacancy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.vacancy-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #ffd700;
+  border-radius: 16px;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  flex-wrap: wrap; /* საჭირო, რომ პატარა ეკრანზე გადაიწყოს */
+  word-break: break-word; /* ტექსტი არ გავიდეს ჩარჩოდან */
+}
+
+.vacancy-row:hover {
+  background-color: #fff8d3;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.vacancy-row .position {
+  flex: 2;
+  font-weight: bold;
+  min-width: 100px;
+}
+
+.vacancy-row .hours {
+  flex: 1.2;
+  text-align: center;
+  color: #444;
+  min-width: 80px;
+}
+
+.vacancy-row .salary {
+  flex: 1;
+  text-align: right;
+  color: #28a745;
+  font-weight: bold;
+  min-width: 80px;
+}
+
+/* მორგება პატარა ეკრანებზე */
+@media screen and (max-width: 600px) {
+  .vacancy-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  .vacancy-row .position,
+  .vacancy-row .hours,
+  .vacancy-row .salary {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .vacancies-section h1 {
+    font-size: 28px;
+  }
+}

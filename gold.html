@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ოქროს კალკულატორი - Sono Credit</title>
+    <meta name="description" content="ოქროს დალომბარდების კალკულატორი Sono Credit-ში. გამოთვალეთ ოქროს ღირებულება სინჯისა და წონის მიხედვით.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Sono Credit</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">მთავარი</a>
+                <a href="technika.html" class="nav-link">ტექნიკა</a>
+                <a href="icloud.html" class="nav-link">iCloud</a>
+                <a href="gold.html" class="nav-link active">ოქრო</a>
+                <a href="currency.html" class="nav-link">ვალუტა</a>
+                <a href="contact.html" class="nav-link">კონტაქტი</a>
+                <a href="vakansiebi.html" class="nav-link">ვაკანსიები</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="gold-hero">
+        <img src="images\Flux_Dev_Capture_highquality_welllit_photographs_of_luxurious__3.jpg" alt="ოქრო">
+        <div class="gold-hero-overlay">
+            <h1>სონოს ოქროს კალკულატორი</h1>
+        </div>
+    </div>
+
+    <div class="gold-calculator">
+        <div class="container">
+            <div class="calculator-wrapper">
+                <h2>გამოთვალეთ ოქროს ღირებულება</h2>
+                
+                <div class="gold-form">
+                    <div class="form-group">
+                        <label>აირჩიეთ სინჯი:</label>
+                        <div class="gold-samples">
+                            <button class="sample-btn" data-sample="375">375</button>
+                            <button class="sample-btn" data-sample="500">500</button>
+                            <button class="sample-btn" data-sample="583">583/585</button>
+                            <button class="sample-btn" data-sample="583dut">583/585 დუტი</button>
+                            <button class="sample-btn" data-sample="750">750</button>
+                            <button class="sample-btn" data-sample="900">900</button>
+                            <button class="sample-btn" data-sample="958">958</button>
+                            <button class="sample-btn" data-sample="999">999</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="weight">შეიყვანეთ წონა (გრამი):</label>
+                        <input type="number" id="weight" placeholder="0" min="0" step="0.1">
+                    </div>
+
+                    <div class="price-calculation">
+                        <div class="price-row">
+                            <span>ღირებულება:</span>
+                            <span id="total-price">0 ლარი</span>
+                        </div>
+                        <div class="commission-row">
+                            <span>გადასახადი ყოველთვიურად (2%):</span>
+                            <span id="commission-amount">0 ლარი</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/gold.js"></script>
+</body>
+</html>
